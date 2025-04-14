@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+{% block title %}Registrar Aula{% endblock %}
+{% block content %}
+<h2>Registrar Aula</h2>
+<form method="post">
+    <div class="mb-3">
+        <label>Nombre del aula:</label>
+        <input type="text" name="nombre" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+{% endblock %}
+    

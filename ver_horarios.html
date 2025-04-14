@@ -1,0 +1,12 @@
+
+{% extends "base.html" %}
+{% block title %}Horarios de {{ aula.nombre }}{% endblock %}
+{% block content %}
+<h2>Horarios para el aula: {{ aula.nombre }}</h2>
+<ul class="list-group">
+    {% for h in horarios %}
+        <li class="list-group-item">{{ h.inicio.strftime('%H:%M') }} - {{ h.fin.strftime('%H:%M') }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+    
